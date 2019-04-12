@@ -6,6 +6,6 @@ $name = "KonnoYo";
 $world = "'s World!";
 
 // 各変数を連結させて表示
-echo $hello,$name,$world,"\n";
+echo $hello.$name.$world,"\n";
 
 ?>
