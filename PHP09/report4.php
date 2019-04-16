@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+/* admin/profile/create にアクセスしたら ProfileController の add Action に、
+   admin/profile/edit にアクセスしたら ProfileController の edit Action に
+   割り当てる                                                                */
+   
 Route::group(['prefix' => 'admin'], function() {
     Route::get('profile/create', 'Admin\ProfileController@add');
     Route::get('profile/edit', 'Admin\ProfileController@edit');
